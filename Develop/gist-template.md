@@ -1,10 +1,10 @@
-# Title (replace with your title)
+# Regex Tutorial
 
-Introductory paragraph (replace this with your text)
+Today, we will be learning and understanding the fundumentals of Regex also, known as regular expressions. Regex is used best for any complex searches a user may want to find instead of the basic command/control + F. 
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+By the end of this tutorial the user will understand and learn how a Regex can be used to understand this code  ```/^#?([a-f0-9]{6}|[a-f0-9]{3})$/```. 
 
 ## Table of Contents
 
