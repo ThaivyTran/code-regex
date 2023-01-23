@@ -4,7 +4,7 @@ Today, we will be learning and understanding the fundumentals of Regex also, kno
 
 ## Summary
 
-By the end of this tutorial the user will understand and learn how a Regex can be used to understand this code  ```/^#?([a-f0-9]{6}|[a-f0-9]{3})$/```. 
+By the end of this tutorial the user will understand and learn how a Regex can be used to understand this code ```/^#?([a-f0-9]{6}|[a-f0-9]{3})$/```. 
 
 ## Table of Contents
 
@@ -23,8 +23,14 @@ By the end of this tutorial the user will understand and learn how a Regex can b
 ## Regex Components
 
 ### Anchors
+There's mainly two different type of anchors such as ```^``` or ```$```. ```^``` can be used to identify the beginning word of each line while ```$``` can be used to identify the ending word of each line.
+
+```/^#?([a-f0-9]{6}|[a-f0-9]{3})$/```
+
+For the code above you can see theres an ```^``` in the second character of code, this means that it'll look for the beginning of the line. While on the 30th character you'll see a ```$``` that means it's looking for the end of each line.
 
 ### Quantifiers
+There's many quantifiers 
 
 ### OR Operator
 
