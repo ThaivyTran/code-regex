@@ -19,6 +19,7 @@ By the end of this tutorial the user will understand and learn how a Regex can b
 - [Boundaries](#boundaries)
 - [Back-references](#back-references)
 - [Look-ahead and Look-behind](#look-ahead-and-look-behind)
+- [Conclusion](#conclusion)
 
 ## Regex Components
 
@@ -99,9 +100,22 @@ An example of this is let's say we want to search for ```cat```. We would do a r
 When using ```\B``` that means that it'll do the opposite of ```\b``` so no matter where ```cat``` is located, words like ```locate``` or ```vacate``` will appear because it includes ```cat``` inside the word.
 
 ### Back-references
-**Back-references** are used in regex to search for mutiple same characters.
+**Back-references** are used in regex to search words that fit that citeria more such as searching for words that are written mutiple times next to each other.
+
+```\b(\w+)\s\1\b``` regex will search for words that are exactly the same next to eather other so for example, in this line of text "I'm very very tired". ```very very``` will appear as the regex search.
 
 ### Look-ahead and Look-behind
+**Look-ahead** helps find words you want to capture in the beginning of any sentences. <br />
+```(?=)``` find words at the front <br />
+
+For example, ```Emma want to go to school. Jacob want to go to school```. Here you would want to find only the names of who wants to go to school. Then you would want to type the regex like this ```(?=want to go to school).*``` and the two names that should appear is ```Emma``` and ```Jacob```.
+
+**Look-behind** helps find words you want to capture after any sentences. <br />
+```(?<=)``` = find words at the end <br />
+
+For example, ```I want to go to school. I want to go to work```. You want to find only places that this person want to go to. Then you would want to type the regex like this ```(?<I want to go to).*``` and the two places that should appear is ```school``` and ```work```.
+
+### Conclusion
 
 ## Author
 Hello! My name is Thaivy Tran and I'm new to coding! I hope you find this beginners tutorial useful! Feel free to contact me at my email, Tran.Thaivy1997@gmail.com for any suggestions on making this Regex tutorial better!
