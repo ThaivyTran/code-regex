@@ -36,9 +36,14 @@ Quantifiers are symbols that set limits to strings. Usually including the minimu
 ```{ min , max }``` = minimum, maximum  <br />
 ```{ n }``` = single number <br />
 
-So for our hex code ```/^#?([a-f0-9]{6}|[a-f0-9]{3})$/``` you can see theres two different type of curly braces with a number ```{6}``` and ```{3}``` so the first hex code is 6 charactors long and the 2nd is 3 characters long.
+So for our hex code ```/^#?([a-f0-9]{6}|[a-f0-9]{3})$/``` you can see theres two different type of curly braces with a number ```{6}``` and ```{3}``` so the first hex code is 6 charactors long and the 2nd is 3 characters long. That means in this regex the code MUST be 6 digits or 3 digits long.
 
 ### OR Operator
+If you want to find mulitple different type of characters you may use the OR operator to simulate that in regex codes.
+
+```|``` = OR operator
+
+For ```/^#?([a-f0-9]{6}|[a-f0-9]{3})$/``` you can see theres an OR operator in the middle of the hex code regex that tells us that the regex is looking for a code thats 6 strings long **OR** 3 string long.
 
 ### Character Classes
 
