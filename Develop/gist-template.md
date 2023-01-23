@@ -75,7 +75,7 @@ In our example hex code, ```/^#?([a-f0-9]{6}|[a-f0-9]{3})$/``` are there any fla
 ### Grouping and Capturing
 **Capturing groupings** can be used to group strings into subgroups by using parenthesis.<br /> 
 <br /> 
-For example with phone numbers the regex code will appear like this ```\d{3}-\d{3}-\d{4}```. Say you want to only get the area code of each phone number, then creating a subgroup will help search for ***only*** the area codes. The regex code should look like this, ```(\d{3})-\d{3}-\d{4}```. At the end the regex should only look for the first 3 digits of each phone mumber string.
+For example with phone numbers the regex code will appear like this ```\d{3}-\d{3}-\d{4}```. Say you want to only get the area code of each phone number, then creating a subgroup will help search for ***only*** the area codes. The regex code should look like this, ```(\d{3})-\d{3}-\d{4}```. At the end the regex should only look for the first 3 digits of each phone number. If you ***only*** want to search for the last four digits then just add the parenthesis at the end like so, ```\d{3}-\d{3}-(\d{4})``` or if you ***only*** want the middle 3 digits then it should look like ```\d{3}-(\d{3})-\d{4}```. 
 
 ### Bracket Expressions
 
