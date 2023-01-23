@@ -86,7 +86,7 @@ Majority of quanitifers are ***greedy*** matches such as ```+``` and ```*```, wh
 As stated in **quantifiers** we have one ```?``` in our hex code example ```/^#?([a-f0-9]{6}|[a-f0-9]{3})$/``` so the regex will search for one pattern at a time.
 
 ### Boundaries
-**Boundaries** are used to help match words you want the letter to begin with or end with or searching for compound words.
+**Boundaries** are used to help match words you want the letter to begin with or end. You can also use it for searching words within words.
 
 ```\b``` = whole words ***only*** <br />
 ```\B``` = matches every position <br />
