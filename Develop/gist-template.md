@@ -25,9 +25,7 @@ By the end of this tutorial the user will understand and learn how a Regex can b
 ### Anchors
 There's mainly two different type of anchors such as ```^``` (carrot) or ```$``` (dollar). ```^``` can be used to identify the beginning word of each line while ```$``` can be used to identify the ending word of each line.
 
-```/^#?([a-f0-9]{6}|[a-f0-9]{3})$/```
-
-For the code above you can see theres an ```^``` in the second character of code, this means that it's the beginning of the line. While on the 30th character you'll see a ```$``` that means it's the end of each line.
+In the hex code ```/^#?([a-f0-9]{6}|[a-f0-9]{3})$/```, you can see theres an ```^``` in the second character of code, this means that it's the beginning of the line. While on the 30th character you'll see a ```$``` that means it's the end of each line.
 
 ### Quantifiers
 Quantifiers are symbols that set limits to strings. Usually including the minimum and maximum. 
