@@ -105,4 +105,4 @@ When using ```\B``` that means that it'll do the opposite of ```\b``` so no matt
 
 ## Author
 Hello! My name is Thaivy Tran and I'm new to coding! I hope you find this beginners tutorial useful! Feel free to contact me at my email, Tran.Thaivy1997@gmail.com for any suggestions on making this Regex tutorial better!
-For more feel free to look at my Github profile, <a href="https://github.com/ThaivyTran">@ThaivyTran</a>
+For more look at my Github profile, <a href="https://github.com/ThaivyTran">@ThaivyTran</a>.
