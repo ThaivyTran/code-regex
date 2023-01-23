@@ -86,6 +86,14 @@ Majority of quanitifers are ***greedy*** matches such as ```+``` and ```*```, wh
 As stated in **quantifiers** we have one ```?``` in our hex code example ```/^#?([a-f0-9]{6}|[a-f0-9]{3})$/``` so the regex will search for one pattern at a time.
 
 ### Boundaries
+**Boundaries** are used to help match words you want the letter to begin with or end with or searching for compound words.
+
+```\b``` = whole words ***only*** <br />
+```\B``` = matches every position <br />
+
+An example of this is let's say we want to search for ```cat```. We would do a regex that looks like this ```\bcat``` this regex is currently searching for any words that starts with ```cat```, so maybe ```cats``` or ```categories``` will appear. But if you want to search words that ends with ```cat``` then you would put the ```\b``` at the end like so, ```cat\b```. So maybe words like ```tacocat``` or ```tomcat``` will appear.
+
+When using ```\B``` that means that it'll do the opposite of ```\b``` so no matter where ```cat``` is located, words like ```locate``` or ```vacate``` will appear because it includes ```cat``` inside the word.
 
 ### Back-references
 
