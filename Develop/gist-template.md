@@ -30,7 +30,15 @@ There's mainly two different type of anchors such as ```^``` (carrot) or ```$```
 For the code above you can see theres an ```^``` in the second character of code, this means that it's the beginning of the line. While on the 30th character you'll see a ```$``` that means it's the end of each line.
 
 ### Quantifiers
-There's many quantifiers 
+Quantifiers are symbols that set limits to strings. Usually including the minimum and maximum. 
+
+```*``` = 0 or more
+```+``` = 1 or more
+```?``` = 0 or 1
+```{ min , max }``` = minimum, maximum 
+```{ n }``` = single number
+
+So for our hex code ```/^#?([a-f0-9]{6}|[a-f0-9]{3})$/``` you can see theres two different type of curly braces with a number ```{6}``` and ```{3}``` so the first hex code is 6 charactors long and the 2nd is 3 characters long.
 
 ### OR Operator
 
