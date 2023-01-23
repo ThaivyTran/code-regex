@@ -63,10 +63,10 @@ In our hex code ```/^#?([a-f0-9]{6}|[a-f0-9]{3})$/``` theres two sets of square 
 ### Flags
 **Flags** are included at the ***end*** of the regex, after the 2nd slash, it's to help specify the regex search.
 
-```i``` = case-insensitive
-```g``` = all matches
-```m``` = multi-line search
-```s``` = enables ```.```
+```i``` = case-insensitive <br />
+```g``` = all matches <br />
+```m``` = multi-line search <br />
+```s``` = enables ```.``` <br />
 
 When understanding flags it's mainly used like an "advanced search" option. So if you add an ```i``` before the second slash it'll look for code that has both letter uppercase and lowercase in the word. By adding a ```g``` it'll search for all the matches the regex can find etc.
 
