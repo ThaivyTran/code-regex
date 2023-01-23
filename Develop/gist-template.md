@@ -89,7 +89,7 @@ As stated in **quantifiers** we have one ```?``` in our hex code example ```/^#?
 **Boundaries** are used to help match words you want the letter to begin with or end. You can also use it for searching words within words.
 
 ```\b``` = whole words ***only*** <br />
-```\B``` = matches every position <br />
+```\B``` = matches any position <br />
 
 An example of this is let's say we want to search for ```cat```. We would do a regex that looks like this ```\bcat``` this regex is currently searching for any words that starts with ```cat```, so maybe ```cats``` or ```categories``` will appear. But if you want to search words that ends with ```cat``` then you would put the ```\b``` at the end like so, ```cat\b```. So maybe words like ```tacocat``` or ```tomcat``` will appear.
 
