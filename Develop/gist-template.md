@@ -1,6 +1,6 @@
 # Regex Tutorial
 
-Today, we will be learning and understanding the fundumentals of Regex also, known as regular expressions. Regex is used best for any complex searches a user may want to find instead of the basic command/control + F. 
+Today, we will be learning and understanding the fundumentals of Regex also, known as regular expressions. Regex is used best for any complex searches a user may want to find instead of the basic command/control + F. For my example I want to be able to understand this Regex code ```/^#?([a-f0-9]{6}|[a-f0-9]{3})$/``` which should be a hex color code.
 
 ## Summary
 
