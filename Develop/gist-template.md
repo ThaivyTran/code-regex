@@ -48,15 +48,15 @@ For ```/^#?([a-f0-9]{6}|[a-f0-9]{3})$/``` you can see theres an OR operator in t
 ### Character Classes
 **Character classes** helps identify sets of characters in regex. Usually in square brackets.
 
-```\d``` = digits
-```.``` = any character
-```*``` = 0 or more
-```.*``` = wild card
-```\w``` = any character (A-Z, a-z & 0,9)
-```\W``` = anything **without** a character
-```\s``` = whitespace (space or tab)
-```\S``` = anything **without** whitespace
-```\.``` = literal character
+```\d``` = digits <br />
+```.``` = any character <br />
+```*``` = 0 or more <br />
+```.*``` = wild card <br />
+```\w``` = any character (A-Z, a-z & 0,9) <br />
+```\W``` = anything **without** a character <br />
+```\s``` = whitespace (space or tab) <br />
+```\S``` = anything **without** whitespace <br />
+```\.``` = literal character <br />
 
 In our hex code ```/^#?([a-f0-9]{6}|[a-f0-9]{3})$/``` theres two sets of square brackets. ```[a-f0-9]``` and ```[a-f0-9]```, they both are literally saying the same thing. Which means the regex is looking for codes that fit that requirement in the square brackets, so for letters the regex will look for any letters that is from ***a*** to ***f*** (a,b,c,d,e,f). Then for numbers the regex will look for numbers that is from ***0*** to ***9*** (0,1,2,3,4,5,6,7,8,9).
 
