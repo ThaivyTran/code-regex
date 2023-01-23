@@ -70,10 +70,11 @@ In our hex code ```/^#?([a-f0-9]{6}|[a-f0-9]{3})$/``` theres two sets of square 
 
 When understanding flags it's mainly used like an "advanced search" option. So if you add an ```i``` before the second slash it'll look for code that has both letter uppercase and lowercase in the word. By adding a ```g``` it'll search for all the matches the regex can find etc.
 
-In our example hex code, ```/^#?([a-f0-9]{6}|[a-f0-9]{3})$/``` are there any flags you can see? No right? That means our code isn't limited to any search but the require letters and numbers in the square brackets.
+In our example hex code, ```/^#?([a-f0-9]{6}|[a-f0-9]{3})$/``` are there any flags you can see? No right? That means our code isn't limited to any search but the require letters and numbers.
 
 ### Grouping and Capturing
 **Capturing groupings** can be used to group strings into subgroups by using parenthesis.<br /> 
+<br /> 
 For example with phone numbers the regex code will appear like this ```\d{3}-\d{3}-\d{4}```. Say you want to only get the area code of each phone number, then creating a subgroup will help search for ***only*** the area codes. The regex code should look like this, ```(\d{3})-\d{3}-\d{4}```. At the end the regex should only look for the first 3 digits of each phone mumber string.
 
 ### Bracket Expressions
@@ -96,6 +97,7 @@ An example of this is let's say we want to search for ```cat```. We would do a r
 When using ```\B``` that means that it'll do the opposite of ```\b``` so no matter where ```cat``` is located, words like ```locate``` or ```vacate``` will appear because it includes ```cat``` inside the word.
 
 ### Back-references
+**Back-references** are used in regex to search for mutiple same characters.
 
 ### Look-ahead and Look-behind
 
