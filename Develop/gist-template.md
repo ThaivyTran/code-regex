@@ -83,6 +83,8 @@ Greedy and lazy matches, are the complete opposites of each other. A **greedy** 
 
 Majority of quanitifers are ***greedy*** matches such as ```+``` and ```*```, while ```?``` is a ***lazy*** match.
 
+As stated in **quantifiers** we have one ```?``` in our hex code example ```/^#?([a-f0-9]{6}|[a-f0-9]{3})$/``` so the regex will search for one pattern at a time.
+
 ### Boundaries
 
 ### Back-references
