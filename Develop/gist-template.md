@@ -106,7 +106,7 @@ When using ```\B``` that means that it'll do the opposite of ```\b``` so no matt
 
 ### Look-ahead and Look-behind
 **Look-ahead** helps find words you want to capture in the beginning of any sentences. <br />
-```(?=)``` find words at the front <br />
+```(?=)``` = find words at the front <br />
 
 For example, ```Emma want to go to school. Jacob want to go to school```. Here you would want to find only the names of who wants to go to school. Then you would want to type the regex like this ```(?=want to go to school).*``` and the two names that should appear is ```Emma``` and ```Jacob```.
 
@@ -116,6 +116,15 @@ For example, ```Emma want to go to school. Jacob want to go to school```. Here y
 For example, ```I want to go to school. I want to go to work```. You want to find only places that this person want to go to. Then you would want to type the regex like this ```(?<I want to go to).*``` and the two places that should appear is ```school``` and ```work```.
 
 ### Conclusion
+
+Now that you understand the basics of regex code let's continue to look at our hex code ```/^#?([a-f0-9]{6}|[a-f0-9]{3})$/```. Below is an image of the regex code broken down.
+
+<img src="https://i.ibb.co/9Y4hhvK/Screen-Shot-2023-01-23-at-6-30-34-PM.png">
+
+So let's use this to search for our hex code example.
+```#000000, #00FF00, 609403, #45464, #333, 54, 325#643```<br />
+
+Which string of numbers will appear once you search on the regex? It should be ```#000000, #00FF00, and #333```. But why not the others ```609403, 54 and 325#643```? That's because in ```609403``` this does not include a hashtag, ```54``` is only two digits long, remember the strings must be 3 ***or*** 6 characters long and ```325#643``` includes a hashtag in the middle.
 
 ## Author
 Hello! My name is Thaivy Tran and I'm new to coding! I hope you find this beginners tutorial useful! Feel free to contact me at my email, Tran.Thaivy1997@gmail.com for any suggestions on making this Regex tutorial better!
