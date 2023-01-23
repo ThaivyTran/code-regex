@@ -32,11 +32,11 @@ For the code above you can see theres an ```^``` in the second character of code
 ### Quantifiers
 Quantifiers are symbols that set limits to strings. Usually including the minimum and maximum. 
 
-```*``` = 0 or more
-```+``` = 1 or more
-```?``` = 0 or 1
-```{ min , max }``` = minimum, maximum 
-```{ n }``` = single number
+```*``` = 0 or more <br />
+```+``` = 1 or more <br />
+```?``` = 0 or 1 <br />
+```{ min , max }``` = minimum, maximum  <br />
+```{ n }``` = single number <br />
 
 So for our hex code ```/^#?([a-f0-9]{6}|[a-f0-9]{3})$/``` you can see theres two different type of curly braces with a number ```{6}``` and ```{3}``` so the first hex code is 6 charactors long and the 2nd is 3 characters long.
 
