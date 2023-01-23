@@ -36,7 +36,7 @@ In the hex code ```/^#?([a-f0-9]{6}|[a-f0-9]{3})$/```, you can see theres an ```
 ```{ min , max }``` = minimum, maximum  <br />
 ```{ n }``` = single number <br />
 
-So for our hex code ```/^#?([a-f0-9]{6}|[a-f0-9]{3})$/``` you can see theres two different type of curly braces with a number ```{6}``` and ```{3}``` so the first hex code is 6 charactors long and the 2nd is 3 characters long. That means in this regex the code MUST be 6 digits or 3 digits long.
+So for our hex code ```/^#?([a-f0-9]{6}|[a-f0-9]{3})$/``` you can see theres two different type of curly braces with a number ```{6}``` and ```{3}``` so the first hex code is 6 charactors long and the 2nd is 3 characters long. That means in this regex the code MUST be 6 digits or 3 digits long. We also have a ```?``` quantifier which means it'll search for less strings in other words known as ***lazy***.
 
 ### OR Operator
 If you want to find mulitple different type of characters you may use the **OR operator** to simulate that in regex codes.
@@ -61,12 +61,27 @@ For ```/^#?([a-f0-9]{6}|[a-f0-9]{3})$/``` you can see theres an OR operator in t
 In our hex code ```/^#?([a-f0-9]{6}|[a-f0-9]{3})$/``` theres two sets of square brackets. ```[a-f0-9]``` and ```[a-f0-9]```, they both are literally saying the same thing. Which means the regex is looking for codes that fit that requirement in the square brackets, so for letters the regex will look for any letters that is from ***a*** to ***f*** (a,b,c,d,e,f). Then for numbers the regex will look for numbers that is from ***0*** to ***9*** (0,1,2,3,4,5,6,7,8,9).
 
 ### Flags
+**Flags** are included at the ***end*** of the regex, after the 2nd slash, it's to help specify the regex search.
+
+```i``` = case-insensitive
+```g``` = all matches
+```m``` = multi-line search
+```s``` = enables ```.```
+
+When understanding flags it's mainly used like an "advanced search" option. So if you add an ```i``` before the second slash it'll look for code that has both letter uppercase and lowercase in the word. By adding a ```g``` it'll search for all the matches the regex can find etc.
+
+In our example hex code, ```/^#?([a-f0-9]{6}|[a-f0-9]{3})$/``` are there any flags you can see? No right? That means our code isn't limited to any search but the require letters and numbers in the square brackets.
 
 ### Grouping and Capturing
+**Capturing groupings** can be used to group strings into subgroups by using parenthesis.<br /> 
+For example with phone numbers the regex code will appear like this ```\d{3}-\d{3}-\d{4}```. Say you want to only get the area code of each phone number, then creating a subgroup will help search for ***only*** the area codes. The regex code should look like this, ```(\d{3})-\d{3}-\d{4}```. At the end the regex should only look for the first 3 digits of each phone mumber string.
 
 ### Bracket Expressions
 
 ### Greedy and Lazy Match
+Greedy and lazy matches, are the complete opposites of each other. A **greedy** match will search for many patterns as possible while a **lazy** match will search for the least patterns.
+
+Majority of quanitifers are ***greedy*** matches such as ```+``` and ```*```, while ```?``` is a ***lazy*** match.
 
 ### Boundaries
 
