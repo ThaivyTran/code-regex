@@ -77,6 +77,8 @@ In our example hex code, ```/^#?([a-f0-9]{6}|[a-f0-9]{3})$/``` are there any fla
 <br /> 
 For example with phone numbers the regex code will appear like this ```\d{3}-\d{3}-\d{4}```. Say you want to only get the area code of each phone number, then creating a subgroup will help search for ***only*** the area codes. The regex code should look like this, ```(\d{3})-\d{3}-\d{4}```. At the end the regex should only look for the first 3 digits of each phone number. If you ***only*** want to search for the last four digits then just add the parenthesis at the end like so, ```\d{3}-\d{3}-(\d{4})``` or if you ***only*** want the middle 3 digits then it should look like ```\d{3}-(\d{3})-\d{4}```. 
 
+Do you see any groupings in our example hex code? ```/^#?([a-f0-9]{6}|[a-f0-9]{3})$/``` Yes, we currently are looking for a grouping of hex code at a time. So when we search in regex we should see common groupings of code thats 3-6 digits long.
+
 ### Bracket Expressions
 
 ### Greedy and Lazy Match
@@ -102,5 +104,5 @@ When using ```\B``` that means that it'll do the opposite of ```\b``` so no matt
 ### Look-ahead and Look-behind
 
 ## Author
-
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Hello! My name is Thaivy Tran and I'm new to coding! I hope you find this beginners tutorial useful! Feel free to contact me at my email, Tran.Thaivy1997@gmail.com for any suggestions on making this Regex tutorial better!
+For more feel free to look at my Github profile, <a href="https://github.com/ThaivyTran">@ThaivyTran</a>
