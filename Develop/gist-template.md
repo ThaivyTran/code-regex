@@ -23,12 +23,12 @@ By the end of this tutorial the user will understand and learn how a Regex can b
 ## Regex Components
 
 ### Anchors
-There's mainly two different type of anchors such as ```^``` (carrot) or ```$``` (dollar). ```^``` can be used to identify the beginning word of each line while ```$``` can be used to identify the ending word of each line.
+There's mainly two different type of **anchors** such as ```^``` (carrot) or ```$``` (dollar). ```^``` can be used to identify the beginning word of each line while ```$``` can be used to identify the ending word of each line.
 
 In the hex code ```/^#?([a-f0-9]{6}|[a-f0-9]{3})$/```, you can see theres an ```^``` in the second character of code, this means that it's the beginning of the line. While on the 30th character you'll see a ```$``` that means it's the end of each line.
 
 ### Quantifiers
-Quantifiers are symbols that set limits to strings. Usually including the minimum and maximum. 
+**Quantifiers** are symbols that set limits to strings. Usually including the minimum and maximum. 
 
 ```*``` = 0 or more <br />
 ```+``` = 1 or more <br />
@@ -39,13 +39,26 @@ Quantifiers are symbols that set limits to strings. Usually including the minimu
 So for our hex code ```/^#?([a-f0-9]{6}|[a-f0-9]{3})$/``` you can see theres two different type of curly braces with a number ```{6}``` and ```{3}``` so the first hex code is 6 charactors long and the 2nd is 3 characters long. That means in this regex the code MUST be 6 digits or 3 digits long.
 
 ### OR Operator
-If you want to find mulitple different type of characters you may use the OR operator to simulate that in regex codes.
+If you want to find mulitple different type of characters you may use the **OR operator** to simulate that in regex codes.
 
 ```|``` = OR operator
 
-For ```/^#?([a-f0-9]{6}|[a-f0-9]{3})$/``` you can see theres an OR operator in the middle of the hex code regex that tells us that the regex is looking for a code thats 6 strings long **OR** 3 string long.
+For ```/^#?([a-f0-9]{6}|[a-f0-9]{3})$/``` you can see theres an OR operator in the middle of the hex code regex that tells us that the regex is looking for a code thats 6 strings long ***OR*** 3 string long.
 
 ### Character Classes
+**Character classes** helps identify sets of characters in regex. Usually in square brackets.
+
+```\d``` = digits
+```.``` = any character
+```*``` = 0 or more
+```.*``` = wild card
+```\w``` = any character (A-Z, a-z & 0,9)
+```\W``` = anything **without** a character
+```\s``` = whitespace (space or tab)
+```\S``` = anything **without** whitespace
+```\.``` = literal character
+
+In our hex code ```/^#?([a-f0-9]{6}|[a-f0-9]{3})$/``` theres two sets of square brackets. ```[a-f0-9]``` and ```[a-f0-9]```, they both are literally saying the same thing. Which means the regex is looking for codes that fit that requirement in the square brackets, so for letters the regex will look for any letters that is from ***a*** to ***f*** (a,b,c,d,e,f). Then for numbers the regex will look for numbers that is from ***0*** to ***9*** (0,1,2,3,4,5,6,7,8,9).
 
 ### Flags
 
